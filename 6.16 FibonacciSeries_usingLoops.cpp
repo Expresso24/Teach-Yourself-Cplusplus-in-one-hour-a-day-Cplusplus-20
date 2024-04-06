@@ -7,7 +7,7 @@ int main()
    cout << "This program will calculate " << numsToCalculate \
         << " Fibonacci Numbers at a time" << endl;
 
-   int num1 = 0, num2 = 1;
+   unsigned int num1 = 0, num2 = 1;
    char wantMore = '\0';
    cout << num1 << " " << num2 << " ";
 
@@ -17,7 +17,7 @@ int main()
       {
          cout << num1 + num2 << " ";
 
-         int num2Temp = num2;
+         unsigned int num2Temp = num2;
          num2 = num1 + num2;
          num1 = num2Temp;
       }
